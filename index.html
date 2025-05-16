@@ -9,205 +9,190 @@
 
   body {
     margin: 0;
-    background: radial-gradient(circle at center, #0b0a0a, #000000 80%);
-    color: #f5f5f5;
+    background: #ffffff;
+    color: #000000;
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
-    background-image: url('https://www.transparenttextures.com/patterns/arabesque.png');
-    background-repeat: repeat;
-    background-size: 150px 150px;
   }
 
   h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 3.8rem;
-    color: #d4af37; /* gold */
-    text-shadow: 0 0 15px #d4af37;
-    margin-bottom: 50px;
-    letter-spacing: 2px;
+    font-size: 3.5rem;
+    color: #e6c857;
+    margin-bottom: 40px;
     text-align: center;
   }
 
-  main {
+  .intro {
     max-width: 900px;
-    width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000000;
+  }
+
+  .categories-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
     margin-bottom: 60px;
   }
 
-  section {
-    margin-bottom: 40px;
-    background: rgba(212, 175, 55, 0.15);
-    border: 2px solid #d4af37;
-    border-radius: 15px;
-    padding: 25px 30px;
-    box-shadow: 0 0 20px #d4af37aa;
-  }
-
-  section h2 {
-    font-family: 'Cormorant Garamond', serif;
-    color: #d4af37;
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-  }
-
-  section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #f5f5f5;
-  }
-
   .category {
-    background: rgba(212, 175, 55, 0.15); /* gold transparent */
-    border: 2px solid #d4af37;
+    background: #ffffff;
+    border: 2px solid #e6c857;
     border-radius: 15px;
-    width: 100%;
-    max-width: 900px;
-    margin-bottom: 40px;
-    box-shadow: 0 0 25px #d4af37aa;
+    width: 260px;
+    box-shadow: 0 0 12px #e6c857aa;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .category:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 40px #ffd700cc;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #ffda6b;
   }
 
   .category h2 {
     font-family: 'Cormorant Garamond', serif;
-    background: #d4af37;
+    background: #e6c857;
     color: #0b0a0a;
     margin: 0;
-    padding: 20px 30px;
-    font-size: 2.2rem;
+    padding: 16px 24px;
+    font-size: 1.6rem;
     border-top-left-radius: 13px;
     border-top-right-radius: 13px;
-    letter-spacing: 1.5px;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    text-align: center;
   }
 
   .subcategory {
     display: flex;
     flex-wrap: wrap;
-    padding: 25px 30px;
-    background: rgba(0, 0, 0, 0.75);
-    gap: 18px;
+    padding: 16px;
+    background: #ffffff;
+    gap: 10px;
     justify-content: center;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
   }
 
   .subcategory a {
-    flex: 1 1 140px;
+    flex: 1 1 100px;
     text-decoration: none;
     background: #000000;
-    border: 2px solid #d4af37;
-    border-radius: 12px;
-    padding: 14px 10px;
-    color: #d4af37;
+    border: 2px solid #e6c857;
+    border-radius: 10px;
+    padding: 8px 6px;
+    color: #e6c857;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
     text-align: center;
-    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    user-select: none;
-    box-shadow: 0 0 5px #d4af37bb;
+    transition: all 0.3s ease;
   }
 
   .subcategory a:hover {
-    background: #d4af37;
+    background: #e6c857;
     color: #0b0a0a;
-    box-shadow: 0 0 15px #ffd700;
+    box-shadow: 0 0 10px #ffda6b;
   }
-section p,
-section ul li {
-  color: #000000; /* Pure black font for body text */
-}
 
-  /* Sexy Arabic pattern overlay (transparent texture) */
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-image: url('https://www.transparenttextures.com/patterns/arabesque.png');
-    opacity: 0.04;
-    pointer-events: none;
-    z-index: 0;
+  .about {
+    max-width: 900px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #e6c857;
+    box-shadow: 0 0 12px #e6c857aa;
+    color: #000000;
+    margin-top: 50px;
+  }
+
+  .about h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: #e6c857;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .about p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .contact {
+    margin-top: 40px;
+    font-size: 1rem;
+    text-align: center;
+    color: #000000;
+  }
+
+  .contact h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #e6c857;
+  }
+
+  .contact p {
+    margin: 6px 0;
   }
 </style>
 </head>
 <body>
-
   <h1>M.A Motiwala Jewellers</h1>
 
-  <main>
-    <section>
-      <h2>About Us</h2>
-      <p>Welcome to <strong>M.A Motiwala Jewellers</strong>, where timeless elegance meets unparalleled craftsmanship. For decades, we have been the trusted artisans behind Karachi’s most exquisite gold and silver masterpieces. Our jewelry is not just adornment — it’s a statement of power, prestige, and refined taste. Every piece we create is designed to elevate your presence, turning everyday moments into unforgettable memories. Led by our visionary CEO, <strong>Anas Motiwala</strong>, we combine heritage artistry with modern innovation to bring you collections that transcend trends and define legacies. At M.A Motiwala Jewellers, you don’t just wear jewelry — you wear distinction.</p>
-    </section>
+  <div class="intro">
+    Step into timeless grace and grandeur — where every piece whispers elegance, only at M.A Motiwala Jewellers.
+  </div>
 
-    <section>
-      <h2>Our Collection</h2>
-      <p>Our curated collection represents the pinnacle of luxury and sophistication. From delicate gold rings that whisper elegance to bold silver chains that command attention, each piece is meticulously handcrafted using the finest materials. Explore our expansive range that includes:</p>
-      <ul>
-        <li><strong>Gold Jewelry:</strong> Radiate confidence with our intricate gold rings, bracelets, earrings, nose rings, necklaces, and chains — perfect for both men and women who dare to own their style.</li>
-        <li><strong>Silver Jewelry:</strong> Discover timeless charm in our silver rings, bangles, earrings, nose rings, necklaces, and chains crafted to suit every occasion.</li>
-        <li><strong>Bridal & Wedding Sets:</strong> Celebrate life’s most cherished moments with our exclusive bridal collections designed to symbolize eternal love and grandeur.</li>
-        <li><strong>Custom Designs:</strong> Work alongside our master jewelers to bring your unique vision to life, creating bespoke pieces that are truly one of a kind.</li>
-        <li><strong>Luxury & Limited Editions:</strong> Indulge in our rare collections featuring premium craftsmanship and limited availability for those who demand exclusivity.</li>
-        <li><strong>Professional Piercing Services:</strong> Enhance your look with expert ear and nose piercing services offered in a clean, safe, and welcoming environment.</li>
-      </ul>
-    </section>
-  </main>
-section p,
-section ul li {
-  color: #000000; /* Pure black font for body text */
-}
+  <div class="categories-container">
+    <div class="category">
+      <h2>Gold</h2>
+      <div class="subcategory">
+        <a href="#">Gold Rings</a>
+        <a href="#">Bracelets</a>
+        <a href="#">Chains</a>
+        <a href="#">Gents Rings</a>
+        <a href="#">Nose Rings</a>
+      </div>
+    </div>
 
-  <div class="category">
-    <h2>Gold</h2>
-    <div class="subcategory">
-      <a href="#">Gold Rings</a>
-      <a href="#">Gold Bracelets</a>
-      <a href="#">Gold Earrings</a>
-      <a href="#">Gold Nose Rings</a>
-      <a href="#">Gold Necklaces</a>
-      <a href="#">Gold Chains</a>
-      <a href="#">Gents Gold Rings</a>
-      <a href="#">Gents Gold Bracelets</a>
-      <a href="#">Gold Bands</a>
+    <div class="category">
+      <h2>Silver</h2>
+      <div class="subcategory">
+        <a href="#">Silver Rings</a>
+        <a href="#">Bracelets</a>
+        <a href="#">Chains</a>
+        <a href="#">Gents Rings</a>
+        <a href="#">Nose Rings</a>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Exclusive</h2>
+      <div class="subcategory">
+        <a href="#">Custom Sets</a>
+        <a href="#">Wedding Pieces</a>
+        <a href="#">Limited Editions</a>
+      </div>
     </div>
   </div>
 
-  <div class="category">
-    <h2>Silver</h2>
-    <div class="subcategory">
-      <a href="#">Silver Rings</a>
-      <a href="#">Silver Bracelets</a>
-      <a href="#">Silver Earrings</a>
-      <a href="#">Silver Nose Rings</a>
-      <a href="#">Silver Necklaces</a>
-      <a href="#">Silver Chains</a>
-      <a href="#">Gents Silver Rings</a>
-      <a href="#">Gents Silver Bracelets</a>
-      <a href="#">Silver Bands</a>
-    </div>
+  <div class="about">
+    <h2>About Us</h2>
+    <p>M.A Motiwala Jewellers is a legacy brand redefining luxury and tradition. Led by CEO Anas Motiwala, we craft experiences in gold and silver — not just jewellery. Every piece is a symbol of power, elegance, and timeless heritage.</p>
   </div>
 
-  <div class="category">
-    <h2>Exclusive Collections</h2>
-    <div class="subcategory">
-      <a href="#">Custom Designs</a>
-      <a href="#">Luxury Pieces</a>
-      <a href="#">Wedding Sets</a>
-      <a href="#">Limited Editions</a>
-    </div>
+  <div class="contact">
+    <h3>Contact Us</h3>
+    <p><strong>Address:</strong> Shop #12, Tariq Road, Karachi, Pakistan</p>
+    <p><strong>Phone:</strong> +92 300 1234567</p>
+    <p><strong>Email:</strong> mamotiwalaofficial@gmail.com</p>
+    <p><strong>Instagram:</strong> @ma.motiwala.jewellers</p>
   </div>
-
 </body>
 </html>
